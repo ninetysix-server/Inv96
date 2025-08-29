@@ -1194,7 +1194,7 @@
         <div class="ms-surface form-step" id="step-4">
             <div class="preview-header">
                 <div>
-                    <h2 class="ms-heading ms-heading-lg">Invoice Preview</h2>
+                    <h2 class="ms-heading ms-heading-lg">Invoice document</h2>
                     <p class="ms-text-secondary">Review your invoice below. You can print or download it as a PDF.</p>
                 </div>
 
@@ -1242,10 +1242,399 @@
                     { name: "Pro", price: 900 }
                 ]
             },
-            // ... (other services from your original code)
-            // I've kept the service data the same as in your original code
-            // For brevity, I'm not repeating all 34 services here
-            // In practice, you would include all your services
+            // Poster Design
+            {
+                id: 2,
+                name: "Poster Design",
+                description: "Eye-catching and impactful poster designs for events, promotions, or announcements.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Flyer Design
+            {
+                id: 3,
+                name: "Flyer Design",
+                description: "Effective and distributable flyer designs to promote your business, event, or service directly to your audience.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 300 },
+                    { name: "Premium", price: 600 },
+                    { name: "Pro", price: 900 }
+                ]
+            },
+
+            // Brochure Design
+            {
+                id: 4,
+                name: "Brochure Design",
+                description: "Informative and visually appealing brochure layouts to showcase your products, services, or company details.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 400 },
+                    { name: "Premium", price: 800 },
+                    { name: "Pro", price: 1200 }
+                ]
+            },
+
+            // Banner Design
+            {
+                id: 5,
+                name: "Banner Design",
+                description: "Custom digital or print banner designs for websites, social media, or physical displays.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 400 },
+                    { name: "Premium", price: 800 },
+                    { name: "Pro", price: 1200 }
+                ]
+            },
+
+            // Business Card Design
+            {
+                id: 6,
+                name: "Business Card Design",
+                description: "Professional and memorable business card design that encapsulates your brand for powerful networking.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Product Advert Design
+            {
+                id: 7,
+                name: "Product Advert Design",
+                description: "Compelling advertisement designs tailored to highlight your product's features and drive sales.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 300 },
+                    { name: "Premium", price: 600 },
+                    { name: "Pro", price: 900 }
+                ]
+            },
+
+            // Calendar Design
+            {
+                id: 8,
+                name: "Calendar Design",
+                description: "Customizable calendar designs perfect for brand promotion, gifts, or organizational use.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Letterhead Design
+            {
+                id: 9,
+                name: "Letterhead Design",
+                description: "Elegant and branded stationery design for official correspondence, enhancing your professional image.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+            // Menu Design
+            {
+                id: 10,
+                name: "Menu Design",
+                description: "Appetizing and easy-to-navigate menu designs for restaurants and eateries, from single-page to multi-page layouts.",
+                hasPages: true,
+                packages: [
+                    { name: "Standard", price: 300, includedPages: 1, pagePrice: 200, maxPages: 10 }
+                ]
+            },
+            // CD Art Cover Design
+            {
+                id: 11,
+                name: "CD Art Cover Design",
+                description: "Creative and engaging cover art and packaging design for music albums, software, or media products.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Sign Design
+            {
+                id: 12,
+                name: "Sign Design",
+                description: "Clear and effective sign designs for retail, offices, or directional purposes to attract and inform.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+            // Book Cover Design
+            {
+                id: 13,
+                name: "Book Cover Design",
+                description: "Captivating cover design that sells your book, with options for full wrap-around cover and interior layout design.",
+                hasPages: true,
+                packages: [
+                    { name: "Standard", price: 200, includedPages: 1, pagePrice: 100, maxPages: 50 }
+                ]
+            },
+
+            // Board Design
+            {
+                id: 14,
+                name: "Board Design",
+                description: "Strategic and visually strong designs for presentation boards, whiteboards, or informational displays.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 300 },
+                    { name: "Premium", price: 600 },
+                    { name: "Pro", price: 1200 }
+                ]
+            },
+
+            // Invitation Card Design
+            {
+                id: 15,
+                name: "Invitation Card Design",
+                description: "Beautifully crafted invitation designs for weddings, corporate events, or special occasions.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Membership Card Design
+            {
+                id: 16,
+                name: "Membership Card Design",
+                description: "Professional and secure membership or loyalty card designs to enhance customer retention programs.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Product Design (Graphic)
+            {
+                id: 17,
+                name: "Product Design",
+                description: "Conceptual graphic design for products, including mockups and visualizations for marketing or prototyping.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 300 },
+                    { name: "Premium", price: 600 },
+                    { name: "Pro", price: 900 }
+                ]
+            },
+
+            // Sticker/Product Label Design
+            {
+                id: 18,
+                name: "Sticker/Product Label Design",
+                description: "Custom sticker and product label designs that are vibrant, durable, and compliant with necessary regulations.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 200 },
+                    { name: "Premium", price: 400 },
+                    { name: "Pro", price: 600 }
+                ]
+            },
+
+            // Vehicle Magnet Branding
+            {
+                id: 19,
+                name: "Vehicle Magnet Branding",
+                description: "Dynamic and durable vehicle magnet designs to turn your fleet into a moving advertisement.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 300 },
+                    { name: "Premium", price: 600 },
+                    { name: "Pro", price: 900 }
+                ]
+            },
+
+            // Event Ticket Design
+            {
+                id: 20,
+                name: "Event Ticket Design",
+                description: "Custom event ticket designs with security features and branding for concerts, shows, and entry passes.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 100 },
+                    { name: "Premium", price: 200 },
+                    { name: "Pro", price: 300 }
+                ]
+            },
+
+            // Billboard Design
+            {
+                id: 21,
+                name: "Billboard Design",
+                description: "Large-scale, high-impact billboard designs created for maximum visibility and message clarity from a distance.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 600 },
+                    { name: "Premium", price: 1200 },
+                    { name: "Pro", price: 1800 }
+                ]
+            },
+
+            // Brand Identity Pack
+            {
+                id: 22,
+                name: "Brand Identity Pack",
+                description: "A comprehensive suite of branding materials including logo, color palette, typography, and brand guidelines.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 800 },
+                    { name: "Premium", price: 1600 },
+                    { name: "Pro", price: 2400 }
+                ]
+            },
+
+            // T-Shirt Design
+            {
+                id: 23,
+                name: "T-Shirt Design",
+                description: "Creative and wearable art designs for t-shirts, perfect for merchandising, events, or team uniforms.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 300 },
+                    { name: "Premium", price: 600 },
+                    { name: "Pro", price: 900 }
+                ]
+            },
+
+            // Event Backdrop Design
+            {
+                id: 24,
+                name: "Event Backdrop Design",
+                description: "Stunning backdrop designs for stages, photo opportunities, and exhibitions at corporate events and weddings.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 400 },
+                    { name: "Premium", price: 800 },
+                    { name: "Pro", price: 1200 }
+                ]
+            },
+            // Certificate Design
+            {
+                id: 25,
+                name: "Certificate Design",
+                description: "Elegant and formal certificate design for awards, achievements, and recognition, with customizable text fields.",
+                hasPages: true,
+                packages: [
+                    { name: "Standard", price: 200, includedPages: 1, pagePrice: 30, maxPages: 100 }
+                ]
+            },
+
+            // Door/Window Vinyl Branding
+            {
+                id: 26,
+                name: "Door/Window Vinyl Branding",
+                description: "Custom vinyl decal designs for glass doors and windows to promote your brand with style and clarity.",
+                hasPages: false,
+                packages: [
+                    { name: "Starter", price: 400 },
+                    { name: "Premium", price: 800 },
+                    { name: "Pro", price: 1200 }
+                ]
+            },
+
+            // Presentation Slide Design
+           {
+                id: 27,
+                name: "Presentation Slide",
+                description: "Professional and cohesive slide deck design to make your presentations visually compelling and effective.",
+                hasPages: true,
+                packages: [
+                    { name: "Standard", price: 200, includedPages: 1, pagePrice: 200, maxPages: 10 }
+                ]
+            },
+
+            // Menu Board Slide Design
+             {
+                id: 28,
+                name: "Menu Board Slide Design",
+                description: "Digital menu board designs for restaurants and cafes, optimized for high-resolution displays and easy updates.",
+                hasPages: true,
+                packages: [
+                    { name: "Standard", price: 400, includedPages: 1, pagePrice: 400, maxPages: 10 }
+                ]
+            },
+                {
+                    id: 29,
+                    name: "Company Profile Design",
+                    description: "Comprehensive and professional company profile document design to impress investors and clients. Up to 5 pages",
+                    hasPages: false,
+                    packages: [
+                        { name: "Starter", price: 700 },
+                        { name: "Premium", price: 1400 },
+                        { name: "Pro", price: 2100 }
+                    ]
+                        },
+                {
+                id: 30,
+                name: "website Design",
+                description: "We create modern, responsive websites designed to visually impress your audience and deeply engage them with your brand.",
+                hasPages: true,
+                packages: [
+                    { name: "Starter", price: 900, includedPages: 1, pagePrice: 900, maxPages: 5 }
+                ]
+            },
+                {
+                id: 31,
+                name: "website Design",
+                description: "Our custom sites are strategically designed to effectively generate qualified leads and directly drive your product or service sales.",
+                hasPages: true,
+                packages: [
+                    { name: "Premium", price: 1800, includedPages: 1, pagePrice: 1800, maxPages: 5 }
+                ]
+            },
+                {
+                id: 32,
+                name: "website Design",
+                description: "Our custom sites are strategically designed to effectively generate qualified leads and directly drive your product or service sales.",
+                hasPages: true,
+                packages: [
+                    { name: "Premium", price: 1800, includedPages: 1, pagePrice: 1800, maxPages: 5 }
+                ]
+            },
+                {
+                id: 33,
+                name: "website Design",
+                description: "We build fast, SEO-optimized websites that rank well and are engineered to convert casual visitors into loyal customers.",
+                hasPages: true,
+                packages: [
+                    { name: "Pro", price: 2700, includedPages: 1, pagePrice: 2700, maxPages: 5 }
+                ]
+            }, {
+                    id: 34,
+                    name: "User System Essentials",
+                    description: "A secure user login system with integrated forms and database architecture to manage and protect customer data and interactions.",
+                    hasPages: false,
+                    packages: [
+                        { name: "Enterprice Form", price: 600 },
+                        { name: "Advanced Login", price: 1200 },
+                        { name: "Enterprice DB", price: 1500 }
+                    ]
+                        }
         ];
 
         // Customer discount data (simulated database)
@@ -1881,13 +2270,13 @@
                 </table>
                 
                 <div class="ms-alert">
-                    <h3 class="ms-heading">Payment Instructions</h3>
-                    <p>Please make payment by ${formattedDueDate}. Payment can be made via bank transfer, credit card, or cash.</p>
+                    <h3 class="ms-heading">Note:</h3>
+                    <p>This invoice was received by ${formattedDueDate}. Payment can be made via bank transfer, credit card, or cash.</p>
                     ${customerId ? `<p>Customer ID: 96-${customerId}</p>` : ''}
                     ${balanceDue > 0 ? `<p><strong>Amount Due: R${balanceDue.toLocaleString()}</strong></p>` : ''}
                 </div>
                 
-                <div class="ms-alert">
+                <div class="ms-alert" hidden>
                     <h3 class="ms-heading">Terms & Conditions</h3>
                     <p>Payment is due within 30 days of invoice date. A 1.5% monthly service charge is applicable on overdue balances.</p>
                 </div>
@@ -1915,7 +2304,7 @@
             const successMessage = document.getElementById('success-message');
             const mainContent = document.getElementById('mainContent');
             
-            const correctPassword = "secure096";
+            const correctPassword = "connect06";
             
             // Function to validate password
             function validatePassword() {
