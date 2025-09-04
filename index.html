@@ -1444,13 +1444,11 @@
             // Sticker/Product Label Design
             {
                 id: 18,
-                name: "Sticker/Product Label Design",
+               name: "Sticker/Product Label Design",
                 description: "Custom sticker and product label designs that are vibrant, durable, and compliant with necessary regulations.",
-                hasPages: false,
+                hasPages: true,
                 packages: [
-                    { name: "Starter", price: 200 },
-                    { name: "Premium", price: 400 },
-                    { name: "Pro", price: 600 }
+                    { name: "Standard", price: 200, includedPages: 1, pagePrice: 60, maxPages: 10 }
                 ]
             },
 
@@ -1582,9 +1580,9 @@
                     description: "Comprehensive and professional company profile document design to impress investors and clients. Up to 5 pages",
                     hasPages: false,
                     packages: [
-                        { name: "Starter", price: 700 },
-                        { name: "Premium", price: 1400 },
-                        { name: "Pro", price: 2100 }
+                        { name: "Starter", price: 600 },
+                        { name: "Premium", price: 800 },
+                        { name: "Pro", price: 1600 }
                     ]
                         },
                 {
@@ -2336,6 +2334,7 @@
 </body>
 
 </html>
+
 
 
 
